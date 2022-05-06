@@ -5,6 +5,10 @@
   --bs-body-color: rgb(61, 55, 55);
 }
 
+body {
+  overflow: none;
+}
+
 input {
   width: 400px;
   padding: 0 20px;
@@ -52,7 +56,21 @@ a:hover {
 }
 
 /* signup.html */
+#male_icon, #female_icon {
+  transition: all ease-out 1.75s;
+}
 
+#male_icon:hover {
+  transform: scale(1.2);
+  fill: dodgerblue;
+  cursor: pointer;
+}
+
+#female_icon:hover {
+  transform: scale(1.2);
+  fill: crimson;
+  cursor: pointer;
+}
 
 /* login.html */
 .gradient-custom {
@@ -82,14 +100,41 @@ a:hover {
   opacity: 0.6;
 }
 
+/* animations for classes and ids*/
+.fade-in{
+  animation: fadeIn 1s;
+}
+
+.fade-in-down {
+  animation: fadeInDown 2s;
+}
+
 /* animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInDown {
   0% {
      opacity: 0;
-     transform: translateY(-20px);
+     transform: translateY(-10em);
   }
   100% {
      opacity: 1;
      transform: translateY(0);
   }
-} 
+}
+
+@keyframes appearLeft {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
