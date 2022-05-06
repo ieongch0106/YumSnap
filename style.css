@@ -1,0 +1,95 @@
+/* settings */
+:root {
+  --bs-body-font-family: 'candara';
+  --bs-body-font-weight: bolder;
+  --bs-body-color: rgb(61, 55, 55);
+}
+
+input {
+  width: 400px;
+  padding: 0 20px;
+}
+
+a {
+  color: #ae4949cb;
+}
+
+a:hover {
+  color: rgb(135, 70, 57);
+}
+
+.btn-primary {
+  color: white;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: large;
+  white-space: nowrap;
+  border: none;
+  background: linear-gradient(315deg, #f3400f 5%, rgb(236, 82, 87) 25%);
+}
+  
+.btn-primary:hover {
+  color: white;
+  background: black;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.navbar-nav > li{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* index.html */
+#simpliest {
+  font-size: 45px;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.secondary {
+  color: white;
+  font-weight: 480;
+  font-family: 'calibri';
+}
+
+/* signup.html */
+
+
+/* login.html */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #b44949;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(178, 100, 100), rgb(189, 58, 58));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(178, 100, 100), rgb(189, 58, 58))
+}
+
+/* homepage.html */
+.pill {
+  white-space: nowrap;
+  transition: all ease-out 0.75s;
+}
+
+.pill:hover {
+  border-radius: 50rem;
+  background-color: rgba(181, 168, 168, 0.401);
+}
+
+#avatar:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+/* animations */
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
